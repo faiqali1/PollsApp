@@ -13,14 +13,12 @@
                         </tr>
                     </thead>
                     <tbody>
+                    {% for choice in question.choice_set.all %}
                         <tr>
-                            <td>Dogs are Nice</td>
-                            <td>55</td>
+                            <td>{{ choice.choice_text }}</td>
+                            <td>{{ choice.votes }}</td>
                         </tr>
-                        <tr>
-                            <td>Cats are nice</td>
-                            <td>69</td>
-                        </tr>
+                    {% endfor %}
                     </tbody>
                 </table>
             </div>
