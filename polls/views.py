@@ -1,5 +1,5 @@
 # Create your views here.
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse
 from django.views import generic
@@ -26,9 +26,14 @@ class ResultsView(generic.DetailView):
     template_name = 'polls/results.html'
 
 
+class LatestDetailView(generic.ListView):
+    queryset = Question.objects.order_by('-pub_date')
+    template_name = 'polls/latest-List.html'
+
+
 def vote(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
-    try:                                            # post['Choice] sent back the Value....
+    try:  # post['Choice] sent back the Value....
         selected_choice = question.choice_set.get(pk=request.POST['choice'])
     except (KeyError, Choice.DoesNotExist):
         # Redisplay the question voting form.
