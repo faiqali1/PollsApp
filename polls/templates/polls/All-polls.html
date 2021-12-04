@@ -1,11 +1,10 @@
 {% extends "polls/base.html" %}
 {% load static %}
-
-    {% block nav %}
-            <li class="nav-item"><a class="nav-link active" href="#">All Polls</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Latest Polls</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Admin Login</a></li>
-    {% endblock nav %}
+        {% block nav %}
+            <li class="nav-item"><a class="nav-link active" href="{% url 'polls:index' %}">All Polls</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'polls:latest' %}">Latest Polls</a></li>
+            <li class="nav-item"><a class="nav-link" href="/admin">Admin Login</a></li>
+        {% endblock nav %}
 {% block page %}
     {% if latest_question_list %}
         <ul class="list-group">

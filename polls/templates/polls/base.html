@@ -17,11 +17,13 @@
         <div class="container"><a class="navbar-brand" href="#">Polls</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
+
                     {% block nav %}
-                    <li class="nav-item"><a class="nav-link" href="#">All Polls</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Latest Polls</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Admin Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'polls:index' %}">All Polls</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'polls:latest' %}">Latest Polls</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/admin">Admin Login</a></li>
                     {% endblock nav %}
+
                 </ul>
             </div>
         </div>

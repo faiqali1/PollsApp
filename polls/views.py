@@ -19,7 +19,7 @@ class IndexView(generic.ListView):
 
 class DetailView(generic.DetailView):
     model = Question
-    template_name = 'polls/detail.html'
+    template_name = 'polls/poll_page.html'
 
 
 class ResultsView(generic.DetailView):
@@ -29,17 +29,19 @@ class ResultsView(generic.DetailView):
 
 
 class LatestDetailView(generic.ListView):
-    queryset = Question.objects.order_by('-pub_date')
-    template_name = 'polls/latest-List.html'
+    context_object_name = 'question_list'
+    queryset = Question.objects.order_by('pub_date')
+    template_name = 'polls/latest-Polls.html'
 
 
 def vote(request, question_id):
+    # TODO: Complete this question
     question = get_object_or_404(Question, pk=question_id)
     try:  # post['Choice] sent back the Value....
         selected_choice = question.choice_set.get(pk=request.POST['choice'])
     except (KeyError, Choice.DoesNotExist):
         # Redisplay the question voting form.
-        return render(request, 'polls/detail.html', {
+        return render(request, 'polls/poll_page.html', {
             'question': question,
             'error_message': "You didn't select a choice.",
         })
