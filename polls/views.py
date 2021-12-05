@@ -35,7 +35,7 @@ class LatestDetailView(generic.ListView):
 
 
 def vote(request, question_id):
-    # TODO: Complete this question
+    # TODO: Complete this question -- partially complete
     question = get_object_or_404(Question, pk=question_id)
     try:  # post['Choice] sent back the Value....
         selected_choice = question.choice_set.get(pk=request.POST['choice'])
