@@ -4,7 +4,6 @@
 
 - [About](#about)
 - [Getting Started](#getting_started)
-- [Getting It Started](#Getting_It_Running)
 - [Usage](#usage)
 - [Contributing](../CONTRIBUTING.md)
 
@@ -32,7 +31,7 @@ Assuming you have the virtual environment set up.
 ```
     pip install -r requirements.txt
 ```
-## Getting It Running<a name = "Getting_It_Running"></a>
+### Getting It Running<a name = "Getting_It_Running"></a>
 
 Make the database with 
 
@@ -53,7 +52,7 @@ Create a superuser account by
     python manage.py makesuperuser
 ```
 
-Viola! now you should be able to add, remove or edit any post.
+*Viola! now you should be able to add, remove or edit any post.*
 
 
 ## Usage <a name = "usage"></a>
