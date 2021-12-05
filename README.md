@@ -9,12 +9,11 @@
 
 ## About <a name = "about"></a>
 
-Fully featured Django poll app with the ability to add, remove or edit polls. 
+Fully featured Quartz Themed Django poll app with the ability to add, remove or edit polls. 
 
 ## Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
-
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 ### Prerequisites
 
 What things you need to install the software and how to install them.
@@ -79,10 +78,3 @@ If there's anything I missed do let me know.
 Here's the [design file](/Design/Poll-App.bsdesign) for the project.
 
 Thank for checking the project out.
-
-
-
-
-
-
-
