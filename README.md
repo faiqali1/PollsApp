@@ -5,7 +5,7 @@
 - [About](#about)
 - [Getting Started](#getting_started)
 - [Usage](#usage)
-- [Contributing](../CONTRIBUTING.md)
+- [Aditional notes](#aditional_notes)
 
 ## About <a name = "about"></a>
 
@@ -54,6 +54,35 @@ Create a superuser account by
 
 *Viola! now you should be able to add, remove or edit any post.*
 
+### Running The Web Server
+```
+    python manage.py runserver
+```
+
 
 ## Usage <a name = "usage"></a>
+
+### Main Screen
+
+![image](https://user-images.githubusercontent.com/74228240/144742890-dc0a0485-db52-462a-bd72-75a43ab01d5a.png)
+
+### Question Page 
+![image](https://user-images.githubusercontent.com/74228240/144742912-960b8169-7844-4eca-95ee-d1848c1e7789.png)
+
+### Result Page
+![image](https://user-images.githubusercontent.com/74228240/144742968-c352386e-b596-4f8e-a27a-5c7396fb2cc8.png)
+
+# Aditional Notes <a name = "aditional_notes"></a>
+Feel free to to contribute to the repo to help others out. 
+If there's anything I missed do let me know.
+
+Here's the [design file](PollsApp/Design/Poll-App.bsdesign) for the project.
+
+Thank for checking the project out.
+
+
+
+
+
+
 
