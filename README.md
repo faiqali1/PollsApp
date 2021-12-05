@@ -76,7 +76,7 @@ Create a superuser account by
 Feel free to to contribute to the repo to help others out. 
 If there's anything I missed do let me know.
 
-Here's the [design file](PollsApp/Design/Poll-App.bsdesign) for the project.
+Here's the [design file](/Design/Poll-App.bsdesign) for the project.
 
 Thank for checking the project out.
 
